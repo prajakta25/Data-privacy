@@ -1,0 +1,61 @@
+0 input		//output$input.bob[9]$0
+1 input		//output$input.bob[8]$0
+2 input		//output$input.bob[7]$0
+3 input		//output$input.bob[6]$0
+4 input		//output$input.bob[5]$0
+5 input		//output$input.bob[4]$0
+6 input		//output$input.bob[3]$0
+7 input		//output$input.bob[2]$0
+8 input		//output$input.bob[1]$0
+9 input		//output$input.bob[0]$0
+10 input		//output$input.alice[9]$0
+11 input		//output$input.alice[8]$0
+12 input		//output$input.alice[7]$0
+13 input		//output$input.alice[6]$0
+14 input		//output$input.alice[5]$0
+15 input		//output$input.alice[4]$0
+16 input		//output$input.alice[3]$0
+17 input		//output$input.alice[2]$0
+18 input		//output$input.alice[1]$0
+19 input		//output$input.alice[0]$0
+20 gate arity 2 table [ 0 0 0 1 ] inputs [ 9 19 ]
+21 gate arity 2 table [ 0 0 0 1 ] inputs [ 8 18 ]
+22 gate arity 2 table [ 0 0 0 1 ] inputs [ 7 17 ]
+23 gate arity 2 table [ 0 0 0 1 ] inputs [ 6 16 ]
+24 gate arity 2 table [ 0 0 0 1 ] inputs [ 5 15 ]
+25 gate arity 2 table [ 0 0 0 1 ] inputs [ 4 14 ]
+26 gate arity 2 table [ 0 0 0 1 ] inputs [ 3 13 ]
+27 gate arity 2 table [ 0 0 0 1 ] inputs [ 2 12 ]
+28 gate arity 2 table [ 0 0 0 1 ] inputs [ 1 11 ]
+29 gate arity 2 table [ 0 0 1 0 ] inputs [ 21 20 ]
+30 gate arity 2 table [ 0 1 0 0 ] inputs [ 21 20 ]
+31 gate arity 2 table [ 0 1 1 1 ] inputs [ 30 29 ]
+32 gate arity 2 table [ 0 0 1 0 ] inputs [ 22 31 ]
+33 gate arity 2 table [ 0 1 0 0 ] inputs [ 22 31 ]
+34 gate arity 2 table [ 0 1 1 1 ] inputs [ 33 32 ]
+35 gate arity 2 table [ 0 0 1 0 ] inputs [ 23 34 ]
+36 gate arity 2 table [ 0 1 0 0 ] inputs [ 23 34 ]
+37 gate arity 2 table [ 0 1 1 1 ] inputs [ 36 35 ]
+38 gate arity 2 table [ 0 0 1 0 ] inputs [ 24 37 ]
+39 gate arity 2 table [ 0 1 0 0 ] inputs [ 24 37 ]
+40 gate arity 2 table [ 0 1 1 1 ] inputs [ 39 38 ]
+41 gate arity 2 table [ 0 0 1 0 ] inputs [ 25 40 ]
+42 gate arity 2 table [ 0 1 0 0 ] inputs [ 25 40 ]
+43 gate arity 2 table [ 0 1 1 1 ] inputs [ 42 41 ]
+44 gate arity 2 table [ 0 0 1 0 ] inputs [ 26 43 ]
+45 gate arity 2 table [ 0 1 0 0 ] inputs [ 26 43 ]
+46 gate arity 2 table [ 0 1 1 1 ] inputs [ 45 44 ]
+47 gate arity 2 table [ 0 0 1 0 ] inputs [ 27 46 ]
+48 gate arity 2 table [ 0 1 0 0 ] inputs [ 27 46 ]
+49 gate arity 2 table [ 0 1 1 1 ] inputs [ 48 47 ]
+50 gate arity 2 table [ 0 0 1 0 ] inputs [ 28 49 ]
+51 gate arity 2 table [ 0 1 0 0 ] inputs [ 28 49 ]
+52 gate arity 2 table [ 0 1 1 1 ] inputs [ 51 50 ]
+53 gate arity 2 table [ 0 0 1 0 ] inputs [ 20 52 ]
+54 gate arity 2 table [ 0 1 0 0 ] inputs [ 20 52 ]
+55 gate arity 2 table [ 0 1 1 1 ] inputs [ 54 53 ]
+56 gate arity 2 table [ 0 0 1 0 ] inputs [ 20 55 ]
+57 gate arity 2 table [ 0 1 0 0 ] inputs [ 20 55 ]
+58 gate arity 2 table [ 0 1 1 1 ] inputs [ 57 56 ]
+59 output gate arity 1 table [ 0 1 ] inputs [ 58 ]	//output$output.alice$0
+60 output gate arity 1 table [ 0 1 ] inputs [ 58 ]	//output$output.bob$0

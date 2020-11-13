@@ -1,0 +1,76 @@
+/*
+ * Compute the Scalar Product of two boolean vectors
+ */
+program ScalarProduct {
+
+// Constants
+
+const inp_size = 10;
+
+// Type Definitions
+
+type Elem  =  Boolean;
+type AliceInput = Elem[inp_size];
+type AliceOutput = Boolean;
+type BobInput = Elem[inp_size];
+type BobOutput = Boolean;
+type Input = struct {AliceInput alice, BobInput bob};
+type Output = struct {AliceOutput alice, BobOutput bob};
+
+// Function Definitions
+
+// This is the main function
+function Output output(Input input) {
+
+   var Int<8> i;
+   var Int<8> ai;
+   var Int<8> bi;
+   var Int<8> ci;
+   var Int<8> di;
+   var Int<8> ei;
+   var Boolean mul;
+   var Boolean sum;
+   var Boolean temp;
+   var Boolean[inp_size-1] arr1;
+   var Boolean[inp_size] arr;
+
+   ai=0;
+   bi=0;
+   ci=0;
+   di=0;
+   ei=0;
+   mul=0;
+
+
+    // Alice[i] AND Bob[i]
+   for (i = 1 to inp_size-1) {
+       mul =  (input.alice[ai] & input.bob[bi]);
+       //store the result of and computation 
+       arr[ai] = mul;
+ 	
+       ai = ai + 1;
+       bi = bi + 1;
+   }
+    
+   ci=0;
+   for (i = 2 to inp_size) {
+        ei = ei + 1;
+        arr1[ci] = arr[ei];
+        ci=ci+1;
+    }
+
+   ci=0;
+   //Perform arr[i] XOR arr[i+1] to get final result of scalar product of 2 boolean vector
+   temp = arr[ci];
+   for (i = 1 to inp_size) {
+       sum =  ((temp & (~arr1[di])) | ((~temp) & arr1[di]));
+       temp =  sum;
+       output.alice= sum;
+       output.bob = sum;
+       di = di + 1;
+       ci = ci + 1;
+   }
+   
+}
+
+}
